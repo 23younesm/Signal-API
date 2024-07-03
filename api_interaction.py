@@ -13,7 +13,7 @@ def send_message(message, recipients):
     return response.json()
 
 def receive_messages():
-    url = 'http://IP:8080/v1/receive/%2B17174757592?ignore_attachments=true&ignore_stories=true'
+    url = 'http://IP:8080/v1/receive/%2BPHONE?ignore_attachments=true&ignore_stories=true'
     headers = {'accept': 'application/json'}
     response = requests.get(url, headers=headers)
     return response.json()
